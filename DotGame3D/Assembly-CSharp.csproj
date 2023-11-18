@@ -66,6 +66,7 @@
     <Compile Include="Assets\scripts\Spiker3D.cs" />
     <Compile Include="Assets\scripts\DotRobot.cs" />
     <Compile Include="Assets\scripts\Spiker.cs" />
+    <Compile Include="Assets\scripts\Arrow3D.cs" />
     <Compile Include="Assets\scripts\SettingsMenu.cs" />
     <Compile Include="Assets\scripts\SpikerMove.cs" />
     <Compile Include="Assets\scripts\MusicLoop.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\scripts\DottimaScript.cs" />
     <Compile Include="Assets\scripts\Arrow.cs" />
     <Compile Include="Assets\scripts\QuestionMark.cs" />
-    <Compile Include="Assets\scripts\Arrow3D.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
