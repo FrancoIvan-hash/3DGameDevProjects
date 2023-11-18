@@ -7238,7 +7238,7 @@ PrefabInstance:
     - target: {fileID: 3794195476993075592, guid: 171c7540e9ef3a94c911e15b146076b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.137
       objectReference: {fileID: 0}
     - target: {fileID: 3794195476993075592, guid: 171c7540e9ef3a94c911e15b146076b5,
         type: 3}
@@ -8773,8 +8773,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1673362763749381176, guid: a88d1e808b0a4a340958e1eb0f72cd67,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1673362763749381176, guid: a88d1e808b0a4a340958e1eb0f72cd67,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.6
+      value: 1.939
       objectReference: {fileID: 0}
     - target: {fileID: 1673362763749381176, guid: a88d1e808b0a4a340958e1eb0f72cd67,
         type: 3}
@@ -11366,6 +11371,7 @@ GameObject:
   - component: {fileID: 1823083926}
   - component: {fileID: 1823083925}
   - component: {fileID: 1823083924}
+  - component: {fileID: 1823083927}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11406,7 +11412,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 80
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -11431,13 +11437,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1823083923}
-  m_LocalRotation: {x: 0.39281863, y: 0, z: 0, w: 0.919616}
-  m_LocalPosition: {x: 2.7, y: 2.69, z: -0.94}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 2.69, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 46.26, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
+--- !u!114 &1823083927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823083923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f669755f628b949b95ec3033267244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1849368918
 PrefabInstance:
   m_ObjectHideFlags: 0
