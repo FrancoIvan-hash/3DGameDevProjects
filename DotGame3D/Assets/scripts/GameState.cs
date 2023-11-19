@@ -14,6 +14,7 @@ public class GameState : MonoBehaviour
     public const int MenuScene = 1;
     public const int FirstLevelScene = 2;
     public const int SceneOffset = FirstLevelScene - 1;
+    public const int EndScene = 8;
 
     // Start is called before the first frame update
 

@@ -10,10 +10,18 @@ public class Arrow3D : MonoBehaviour
                           // down, left, up, righ
     private float deathTimer;
     private int state; // 0 = alive, 1 = dying
+
+    AudioSource whoosh;
+    AudioSource bounce;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        AudioSource[] audios = GetComponents<AudioSource>();
+        whoosh = audios[0];
+        bounce = audios[1];
+        whoosh.Play();
         deathTimer = 1.0f;
         state = 0;
     }
@@ -54,6 +62,14 @@ public class Arrow3D : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (state == 1) return;
+
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Arrow")
+        {
+            Physics.IgnoreCollision(collision.collider, gameObject.GetComponent<Collider>());
+            return;
+        }
+
+        bounce.Play();
 
         if (collision.gameObject.tag == "Spiker") Destroy(collision.gameObject);
         state = 1;

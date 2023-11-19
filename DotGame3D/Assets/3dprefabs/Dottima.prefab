@@ -176,9 +176,10 @@ GameObject:
   - component: {fileID: 740931476445330181}
   - component: {fileID: 740931476445330182}
   - component: {fileID: 740931476445330183}
+  - component: {fileID: 3247326511694026587}
   m_Layer: 0
   m_Name: Dottima
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +215,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!65 &740931476445330182
 BoxCollider:
@@ -241,7 +242,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17fd11461f7850741a34e2fd2ae842d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelCompleteTimer: 2
   shot: {fileID: 8282429259019983808, guid: 3fae1751d5249864cb3c72d5136ac563, type: 3}
+  yikes: {fileID: 8300000, guid: d2accb347349bac42b9c7ef08bfb5a55, type: 3}
+  gameOver: {fileID: 8300000, guid: 01469f8471d0cda43bdcd8067e276df9, type: 3}
+  levelComplete: {fileID: 8300000, guid: 443bd3b9490eb9240ace1c0519bcab67, type: 3}
+--- !u!81 &3247326511694026587
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3865268544095471657}
+  m_Enabled: 1
 --- !u!1 &4146747084859761428
 GameObject:
   m_ObjectHideFlags: 0

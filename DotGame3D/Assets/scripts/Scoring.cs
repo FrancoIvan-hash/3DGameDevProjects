@@ -31,11 +31,12 @@ public class Scoring : MonoBehaviour
 
       private void OnGUI()
     {
-        GUI.skin.box.fontSize = 30;
-        GUI.Box(new Rect(20, 20, 400, 50), "Score: " + gamescore + 
+        GUI.skin.label.fontSize = 30;
+        GUI.color = Color.yellow;
+        GUI.Label(new Rect(20, 20, 400, 50), "Score: " + gamescore + 
                          " Timer: " + (int)levelTimer);
-        GUI.Box(new Rect(Screen.width - 220, 20, 200, 50), "Level " + GameState.level);
-        GUI.Box(new Rect(Screen.width / 2 - 100, 20, 200, 50), "Lives " + lives);
+        GUI.Label(new Rect(Screen.width - 220, 20, 200, 50), "Level " + GameState.level);
+        GUI.Label(new Rect(Screen.width / 2 - 100, 20, 200, 50), "Lives " + lives);
  
 
         if (GameState.state == GameState.gameOver)

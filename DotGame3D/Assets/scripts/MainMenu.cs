@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        Cursor.visible = true; // make mouse cursor visible 
+    }
     public void PlayGame()
     {
         Scoring.gamescore = 0;
