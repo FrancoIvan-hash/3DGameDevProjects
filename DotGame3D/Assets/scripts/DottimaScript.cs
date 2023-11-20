@@ -96,7 +96,7 @@ public class DottimaScript : MonoBehaviour
             if (z < x) if (z > -x) direction = 3;
         }
 
-        if (Input.GetKeyDown("space"))
+        if (Input.GetButtonDown("Action"))
         {
             if (direction == 0) yrot = 0.0f;
             if (direction == 1) yrot = 90.0f;
@@ -115,7 +115,7 @@ public class DottimaScript : MonoBehaviour
 
         if (dottimaState == 1)
         {
-            if (Input.GetKeyDown("space"))
+            if (Input.GetButtonDown("Action"))
             {
                 bomb.GetComponent<Bomb3D>().bombState = 1;
                 bomb.transform.SetParent(null);
